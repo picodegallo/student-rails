@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+
+  <title>The Flatiron School</title>
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" id="google_merriweather-css" href="http://fonts.googleapis.com/css?family=Merriweather:400,700&amp;ver=3.5" type="text/css" media="all">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <div class="fit-vids-style">­<style> 
+    .fluid-width-video-wrapper { width: 100%; position: relative; padding: 0;}
+    .fluid-width-video-wrapper iframe,        
+    .fluid-width-video-wrapper object,        
+    .fluid-width-video-wrapper embed {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+    </style>
+    </div>
+    <script id="hs-analytics" src="//js.hubspot.com/analytics/1372105200000/69751.js"></script>
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <%= javascript_include_tag "application" %>
+    <style type="text/css">a{color:#60BDDB}</style>
+  </head>
+  <body>
+    <body class="home page students">
+  <!-- Begin Main Wrapper -->
+  <div class="main-wrapper">
+    <!-- Begin Header -->
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="header-left">
+          <h1 class="logo-text">
+            <a href="/" title="The Flatiron School">
+              <img src="/assets/the-flatiron-school-logo-sm-black.png" class="logo">
+            </a>
+          </h1>
+        </div>
+        <div class="header-right">
+          <div class="menu-header-container">
+            <ul id="nav" class="nav">
+              <li class="menu-item">
+                <a href="http://flatironschool.com/index.html">Home</a>
+              </li>
+              <li>
+                <a href="program.html">The Program</a>
+                <ul class="sub-menu" style="visibility: hidden; " id="nav">
+                  <li><a href="http://flatironschool.com/program.html">Basics</a></li>
+                  <li><a href="http://flatironschool.com/curriculum.html">Curriculum</a></li>
+                  <li><a href="http://flatironschool.com/faculty.html">Faculty</a></li>
+                  <li><a href="http://flatironschool.com/speakers.html">Guest Speakers</a></li>
+                  <li><a href="http://flatironschool.com/faq.html">FAQ</a></li>
+                  <li><a href="http://prework.flatironschool.com">Our Prework</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">The School</a>
+
+                <ul class="sub-menu" style="display: none; " id="nav">
+                  <li><a href="http://flatironschool.com/events.html">Events</a></li>
+                  <li><a href="http://flatironschool.com/contact.html">Contact</a></li>
+                  <li><a href="http://students.flatironschool.com/">Students</a></li>
+                </ul>
+
+              </li>
+              <li><a href="http://info.flatironschool.com/summer-2013-application"><font color="#26c4ff">Apply</font></a>
+              </li>
+              <li>
+                <a href="http://flatironschool.com/employers.html">Employers</a>
+              </li>
+              <li>
+                <a href="http://blog.flatironschool.com/">Blog</a>
+              </li>
+              <li><a href="http://highschool.flatironschool.com/" target="_blank">High School</a></li>
+            </ul><select class="select-menu"><option value="#">Navigate to...</option><option value="http://flatironschool.com/index.html">&nbsp;Home</option><option value="http://students.flatironschool.com/program.html">&nbsp;The Program</option><option value="http://flatironschool.com/program.html">–&nbsp;Basics</option><option value="http://flatironschool.com/curriculum.html">–&nbsp;Curriculum</option><option value="http://flatironschool.com/faculty.html">–&nbsp;Faculty</option><option value="http://flatironschool.com/speakers.html">–&nbsp;Guest Speakers</option><option value="http://flatironschool.com/faq.html">–&nbsp;FAQ</option><option value="http://prework.flatironschool.com/">–&nbsp;Our Prework</option><option value="http://students.flatironschool.com/#">&nbsp;The School</option><option value="http://flatironschool.com/events.html">–&nbsp;Events</option><option value="http://flatironschool.com/contact.html">–&nbsp;Contact</option><option value="http://students.flatironschool.com/" selected="selected">–&nbsp;Students</option><option value="http://info.flatironschool.com/summer-2013-application">&nbsp;Apply</option><option value="http://flatironschool.com/employers.html">&nbsp;Employers</option><option value="http://blog.flatironschool.com/">&nbsp;Blog</option><option value="http://highschool.flatironschool.com/">&nbsp;High School</option></select><div class="mobile-icon"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- End Header -->
+
+
+<%= yield %>
+
+  <!-- Begin Footer -->
+  <div class="footer">
+    <div class="footer-text">
+      <div class="footer-text-right">
+        <div class="copyright">&copy; 2013. The Flatiron School.  All Your Rights Are Belong To Us.</div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <script type='text/javascript'>var custom_js_vars={"flexslider_auto":"enabled"};</script>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33578770-1']);
+    _gaq.push(['_setDomainName', 'flatironschool.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+  <!-- Start of Async HubSpot Analytics Code -->
+  <script type="text/javascript">
+  (function(d,s,i,r) {
+
+      if (d.getElementById(i)){return;}
+
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+
+      n.id=i;n.src='//js.hubspot.com/analytics/'+(Math.ceil(new Date()/r)*r)+'/69751.js';
+
+      e.parentNode.insertBefore(n, e);
+
+  })(document,"script","hs-analytics",300000);
+  </script>
+  <!-- End of Async HubSpot Analytics Code -->
+
+</body>
+</html>
